@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>index</title>
+</head>
+<script src="js/vue.js"></script> 
+<body>
+    <div class="container">
+        <header>
+            <menu>
+                <center>
+                    <img src="img/dab-1692452_640.png" alt="" width="120" height="120"><br>
+                    <ul>
+                        <li>
+                            <h3>Escribanos</h3><br>
+                            <p><i class="fas fa-envelope-open-text"></i>ffffff@fff.com</p>
+                        </li>
+                        <li>
+                            <h3>Llamenos</h3><br>
+                            <p><i class="fas fa-phone"></i>+57 5555555</p>
+                        </li> 
+                    </ul>
+                </center>
+            </menu>
+            <br><br><br><br> 
+            <div class="content-img">
+                <center>
+                    <img v-bind:src="'img/'+imagen[index]" alt="" width="300" height="300">
+                    <i class="fas fa-chevron-left" style="float: left; margin-left: 20%;" v-on:click="DisminuirImg()" ></i>
+                    <i class="fas fa-chevron-right" style="float: right; margin-right: 20%;" v-on:click="AumentoImg()"></i>
+                    <br><br><br>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </center>
+            </div>
+        </header>
+        <section id="section2">
+            <center>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <br><br><br><br>
+                <ul>
+                    <li>
+                        <img src="img/computer.png" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                    <li>
+                        <img src="img/computer.png" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                    <li>
+                        <img src="img/computer.png" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                </ul>
+            </center>
+        </section>
+        <section id="section3">
+            <center>
+                <br><br><br><br>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <br><br><br><br>
+                <i class="fas fa-chevron-left" style="float: left; margin-left: 15px;" v-on:click="slide=0"></i>
+                <i class="fas fa-chevron-right" style="float: right;margin-right: 15px;" v-on:click="slide=1"></i>
+                <ul v-if="slide==0">
+                    <li>
+                        <img src="img/paper-1100254_640.jpg" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                    <li>
+                        <img src="img/dab-1692452_640.png" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                    <li>
+                        <img src="img/knowledge-1052010_640.jpg" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                </ul>
+                <ul v-else>
+                    <li>
+                        <img src="img/Black with Green Cube Computer Logo.jpg" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                    <li>
+                        <img src="img/edit-tools.png" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                    <li>
+                        <img src="img/website.png" alt=""><br><br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <br><br>
+                        <button>Ver mas</button>
+                    </li>
+                </ul>
+            </center>
+        </section>
+        <section id="section4">
+            <center>
+                <br><br><br><br>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <br><br><br><br>
+            </center>
+                <p style="width: 100%;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <br><br>
+                <ul>
+                    <li><p><i class="fas fa-envelope-open-text"></i>ffffff@fff.com</p></li>
+                    <li><p><i class="fas fa-phone"></i>+57 5555555</p></li>
+                </ul>     
+        </section>
+        <footer>
+            <center>
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </center>
+        </footer>
+    </div>
+    <script src="js/efectos.js"></script>
+</body>
+</html>
